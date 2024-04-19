@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #B5C0D0; 
@@ -62,4 +60,55 @@ td {
 
 .text-center {
     text-align: center;
+}
+
+/* Button style */
+button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: x-large;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #999999;
+}
+
+span:hover {
+    background-color: transparent;
+    color: #999999;
+}
+
+.popup-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.popup-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.popup-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.popup-menu:hover .popup-content {
+    display: block;
 }

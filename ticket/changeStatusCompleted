@@ -1,0 +1,22 @@
+<?php
+require_once('db.php');
+
+if (isset($_GET['userID'])) {
+    $userID = $_GET['userID'];
+
+    // Update status of the user with the provided userID to 'Completed'
+    $updateStatusQuery = "UPDATE users SET status='Completed' WHERE userID=$userID";
+    $updateStatusResult = mysqli_query($conn, $updateStatusQuery);
+
+    if ($updateStatusResult) {
+        // Status update successful
+        echo "Status updated to 'Completed' successfully for userID: $userID";
+    } else {
+        // Status update failed
+        echo "Error updating status: " . mysqli_error($conn);
+    }
+} else {
+    // userID not provided
+    echo "userID not provided";
+}
+?>

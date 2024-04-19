@@ -39,6 +39,7 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="index.html">Send Ticket</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <!-- Button to delete another account -->
                 <li><a button onclick="confirmDeleteOther()">Delete Another Account</button></li>
                 <!-- Button to delete current account -->

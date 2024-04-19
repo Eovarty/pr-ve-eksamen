@@ -20,3 +20,7 @@ INSERT INTO users (username, password, admin) VALUES
 DELETE FROM users WHERE username = 'admin';
 
 UPDATE users SET admin = '1' WHERE username = 'admin';
+
+
+INSERT INTO ticket (subject, description, status, date, userID) VALUES 
+('Issue with login', 'I am unable to log in to my account. Whenever I try, it gives me an error message saying "Invalid credential I am unable to log in to my account. Whenever I try, it gives me an error message saying "Invalid credential I am unable to log in to my account. Whenever I try, it gives me an error message saying "Invali I am unable to log in to my account. Whenever I try, it gives me an error message saying "Invalid credentiald credentials."', 'Not completed', CURDATE(), 10);
